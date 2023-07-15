@@ -1,0 +1,27 @@
+/*
+В JavaScript, функция `parseInt()` используется для преобразования строки в целое число. Она анализирует строку и возвращает первое найденное целое число в ней.
+
+Вот пример использования `parseInt()`:
+
+```javascript
+const numberString = "42";
+const number = parseInt(numberString);
+
+console.log(number); // Выводит: 42
+console.log(typeof number); // Выводит: number
+```
+
+В этом примере, мы передаем строку "42" в функцию `parseInt()`. Она анализирует строку и возвращает целое число 42. Затем мы выводим значение переменной `number`, которая содержит преобразованное число, и тип данных этой переменной, который в данном случае является числовым типом (`number`).
+
+Если строка не может быть преобразована в число, то `parseInt()` вернет значение `NaN` (Not a Number). Например:
+
+```javascript
+const invalidString = "Hello";
+const result = parseInt(invalidString);
+
+console.log(result); // Выводит: NaN
+console.log(typeof result); // Выводит: number
+```
+
+В этом случае, строка "Hello" не может быть преобразована в число, поэтому `parseInt()` возвращает `NaN`.
+*/
